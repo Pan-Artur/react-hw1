@@ -1,6 +1,6 @@
-export const Article = () => {
-  const myName = "Артур Панковець";
+import { myName } from "../../App";
 
+export const Article = () => {
   const srcPhoto =
     "https://brainlab.com.ua/wp-content/uploads/2025/01/react-js2-1024x576.jpg";
 
@@ -34,7 +34,9 @@ export const Article = () => {
       </p>
       <ul>
         {colors.map((color) => (
-          <li>{color}</li>
+          <li>
+            <p>{color}</p>
+          </li>
         ))}
       </ul>
     </article>
